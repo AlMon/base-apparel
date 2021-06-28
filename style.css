@@ -1,0 +1,72 @@
+body {
+    background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: hsl(0, 36%, 70%);
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0; 
+    grid-template-areas: ". ."; 
+}
+
+.hero-first-half {
+    padding: 0 17.5% 0 20%;
+    background: url('./images/bg-pattern-desktop.svg');
+    background-size: cover;
+}
+
+.logo {
+    margin: 4rem 0 5.5rem 0;
+}
+
+.hero-header {
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    color: hsl(0, 6%, 24%);
+    line-height: 4.25rem;
+}
+
+.hero-text {
+    margin-top: -1.5rem;
+    line-height: 1.75rem;
+}
+
+.hero-input {
+    margin-top: 2.5rem;
+}
+
+input[type="email"] {
+    width: 90%;
+    height: 50px;
+    padding: 2.5px 0 0 30px;
+    border: round 100;
+    border: solid 1px hsla(0, 36%, 70%, 60%);
+    border-radius: 30px;
+    background: transparent;
+}
+
+button[type="submit"] {
+    margin-left: -90px;
+    height: 56px;
+    width: 95px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);;
+}
+
+::placeholder {
+    color: hsla(0, 36%, 70%, 50%);
+}
+
+.hero-image {
+    height: 100vh;
+    width: 87.5%;
+    right: 0;
+    margin-left: 12.5%;
+}
