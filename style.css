@@ -42,7 +42,7 @@ body {
 input[type="email"] {
     width: 90%;
     height: 50px;
-    padding: 2.5px 0 0 30px;
+    padding: 5px 0 0 30px;
     border: round 100;
     border: solid 1px hsla(0, 36%, 70%, 60%);
     border-radius: 30px;
@@ -50,11 +50,12 @@ input[type="email"] {
 }
 
 button[type="submit"] {
-    margin-left: -90px;
+    margin-left: -100px;;
     height: 56px;
     width: 95px;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
+    text-align: center;
     color: white;
     cursor: pointer;
     background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);;
@@ -69,4 +70,74 @@ button[type="submit"] {
     width: 87.5%;
     right: 0;
     margin-left: 12.5%;
+}
+
+.hero-mobile-image {
+    display: none;
+}
+
+@media only screen 
+   and (max-width : 768px) {
+    
+   .hero-image {
+       display: none;
+   }
+
+   .hero-mobile-image {
+    display: block;
+    min-width: 100%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .logo {
+        margin: 2rem;
+        width: 30%;
+    }
+
+    .hero-header {
+        margin: 2.5rem 0 4rem 0;
+        letter-spacing: 1rem;
+        font-size: 2.25rem;
+        text-align: center;
+        line-height: 2.75rem;
+    }
+
+    .hero-text {
+        padding: 0 10%;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .hero-first-half {
+        padding: 0;
+        background: none;
+        background-size: cover;
+    }    
+
+    input[type="email"] {
+        width: 80%;
+        height: 50px;
+        padding: 5px 0 0 30px;
+        margin-left: 5%;
+        margin-bottom: 4rem;
+        border: round 100;
+        border: solid 1px hsla(0, 36%, 70%, 60%);
+        border-radius: 30px;
+        background: transparent;
+    }
+    
+    button[type="submit"] {
+        margin-left: -100px;;
+        height: 56px;
+        width: 95px;
+        border: none;
+        border-radius: 30px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);;
+    }
 }
